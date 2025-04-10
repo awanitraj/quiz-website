@@ -107,7 +107,7 @@ function App() {
                 <TakeQuiz />
               </PrivateRoute>
             } />
-            
+           <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} /> 
             {/* Admin Routes */}
             <Route path="/admin" element={
               <AdminRoute>
